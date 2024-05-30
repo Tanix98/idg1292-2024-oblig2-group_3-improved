@@ -1,0 +1,700 @@
+.poster {
+  max-width: 842px;
+  max-height: 1192px;
+  position: relative;
+  overflow: hidden;
+}
+
+#background {
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 50%;
+  position: inherit;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.clouds #cloud1 {
+  z-index: 11;
+  position: absolute;
+  max-width: 3.9%;
+  top: 52.5%;
+  left: 11.4%;
+}
+.clouds #cloud2 {
+  z-index: 11;
+  position: absolute;
+  max-width: 3.9%;
+  top: 50.7%;
+  left: 27.1%;
+}
+.clouds #cloud-brows1 {
+  z-index: 11;
+  position: absolute;
+  max-width: 6%;
+  top: 45.5%;
+  left: 29.5%;
+}
+.clouds #cloud3 {
+  z-index: 11;
+  position: absolute;
+  max-width: 3.9%;
+  top: 54.4%;
+  left: 34.1%;
+}
+.clouds #cloud4 {
+  z-index: 11;
+  position: absolute;
+  max-width: 3.9%;
+  top: 48.8%;
+  left: 36.1%;
+}
+.clouds #cloud5 {
+  z-index: 11;
+  position: absolute;
+  max-width: 3.9%;
+  top: 46.4%;
+  left: 44.2%;
+}
+.clouds #cloud-brows2 {
+  z-index: 11;
+  position: absolute;
+  max-width: 9.7%;
+  top: 44%;
+  left: 55.3%;
+}
+.clouds #cloud-brows3 {
+  z-index: 11;
+  position: absolute;
+  max-width: 5.9%;
+  top: 39.8%;
+  left: 72%;
+}
+.clouds #cloud6 {
+  z-index: 11;
+  position: absolute;
+  max-width: 3.9%;
+  top: 46.3%;
+  left: 73.5%;
+}
+.clouds #cloud7 {
+  z-index: 11;
+  position: absolute;
+  max-width: 3.9%;
+  top: 43.55%;
+  left: 81.3%;
+}
+.clouds #cloud8 {
+  z-index: 11;
+  position: absolute;
+  max-width: 3.9%;
+  top: 52.15%;
+  left: 82.75%;
+}
+.clouds .cloud-eyes {
+  fill: #fff;
+  stroke-width: 4.6px;
+  stroke: #0a0203;
+}
+.clouds .cloud-pupils {
+  fill: #a1cf6d;
+}
+.clouds .cloud-mouth {
+  stroke: #0a0203;
+}
+.clouds .cloud-fill {
+  fill: #a1cf6d;
+}
+
+.characters #character-left {
+  z-index: 3;
+  position: absolute;
+  max-width: 21.8%;
+  top: 53%;
+  left: 12%;
+}
+.characters #character-left #character-left-skin {
+  fill: #ad9282;
+}
+.characters #character-left #character-left-pants {
+  fill: #a1cf6d;
+}
+.characters #character-left #character-left-shirt {
+  fill: #f5ec43;
+}
+.characters #character-middle {
+  z-index: 3;
+  position: absolute;
+  max-width: 17.5%;
+  top: 49.7%;
+  left: 39.9%;
+}
+.characters #character-middle .character-middle-skin {
+  fill: #fce0ce;
+}
+.characters #character-middle #character-middle-shirt {
+  fill: #00b1dc;
+}
+.characters #character-middle #character-middle-pants {
+  fill: #c77161;
+}
+.characters #character-right {
+  z-index: 3;
+  position: absolute;
+  max-width: 24.1%;
+  top: 47%;
+  left: 59.5%;
+}
+.characters #character-right #character-right-skin {
+  fill: #816c5d;
+}
+.characters #character-right #character-right-pants {
+  fill: #f5ec43;
+}
+.characters #character-right #character-right-shirt {
+  fill: #a1cf6d;
+}
+.characters .stroke {
+  stroke: #0a0203;
+  stroke-width: 4.6px;
+}
+.characters .character-eye {
+  fill: #fff;
+}
+.characters .character-card {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 4.6px;
+}
+
+.planet .earth-eye-white {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 4;
+  animation-name: eyeShaking;
+  animation-duration: 0.22s;
+  animation-iteration-count: infinite;
+}
+.planet .eye-left {
+  width: 8%;
+  height: 7%;
+  top: 88.5%;
+  left: 26%;
+}
+.planet .eye-right {
+  width: 7%;
+  height: 7%;
+  top: 90.5%;
+  right: 27.5%;
+}
+@keyframes eyeShaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(6%);
+  }
+  50% {
+    transform: translateX(-6%);
+  }
+  75% {
+    transform: translateX(6%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.planet #earth {
+  z-index: 3;
+  position: absolute;
+  top: 63.2%;
+}
+.planet #earth .earth-ocean-fill {
+  fill: #00b1dc;
+}
+.planet #earth .earth-eye-black {
+  fill: #231f20;
+}
+.planet #earth .earth-land {
+  fill: #a1cf6d;
+  stroke-width: 4.6px;
+  stroke: #231f20;
+}
+
+.earth-text-all {
+  fill: #231f20;
+  font-family: Marydale-Bold, Marydale;
+  font-weight: 700;
+}
+.earth-text-all #earth-text-left {
+  z-index: 3;
+  position: absolute;
+  max-width: 13.6%;
+  top: 76.1%;
+  left: 10.5%;
+  font-size: 30px;
+}
+.earth-text-all #earth-text-left .text-left-g {
+  letter-spacing: -0.02em;
+}
+.earth-text-all #earth-text-left .text-left-yn {
+  letter-spacing: 0.02em;
+}
+.earth-text-all #earth-text-left .text-left-ttft {
+  letter-spacing: -0.06em;
+}
+.earth-text-all #earth-text-left .text-left-u {
+  letter-spacing: -0.02em;
+}
+.earth-text-all #earth-text-left .text-left-lda {
+  letter-spacing: -0.02em;
+}
+.earth-text-all #earth-text-left .text-left-r {
+  letter-spacing: -0.04em;
+}
+.earth-text-all #earth-text-left .text-left-fef {
+  letter-spacing: -0.02em;
+}
+.earth-text-all #earth-text-left .text-left-t {
+  letter-spacing: -0.03em;
+}
+.earth-text-all #earth-text-left .text-left-a {
+  letter-spacing: 0em;
+}
+.earth-text-all #earth-text-top {
+  z-index: 3;
+  position: absolute;
+  max-width: 31.5%;
+  top: 67.8%;
+  left: 43.9%;
+  font-size: 30px;
+}
+.earth-text-all #earth-text-top .text-top-t {
+  letter-spacing: -0.06em;
+}
+.earth-text-all #earth-text-top .text-top-i {
+  letter-spacing: -0.02em;
+}
+.earth-text-all #earth-text-top .text-top-lfrud {
+  letter-spacing: -0.02em;
+}
+.earth-text-all #earth-text-top .text-top-kk {
+  letter-spacing: -0.04em;
+}
+.earth-text-all #earth-text-top .text-top-e {
+  letter-spacing: -0.02em;
+}
+.earth-text-all #earth-text-top .text-top-kr {
+  letter-spacing: -0.05em;
+}
+.earth-text-all #earth-text-top .text-top-r {
+  letter-spacing: 0.02em;
+}
+.earth-text-all #earth-text-top .text-top-t2 {
+  letter-spacing: 0.02em;
+}
+.earth-text-all #earth-text-bottom {
+  z-index: 3;
+  position: absolute;
+  max-width: 10.3%;
+  top: 86.5%;
+  left: 46.7%;
+  font-size: 30px;
+}
+.earth-text-all #earth-text-bottom .text-bottom-n {
+  letter-spacing: 0.02em;
+}
+.earth-text-all #earth-text-bottom .text-bottom-t {
+  letter-spacing: -0.06em;
+}
+.earth-text-all #earth-text-bottom .text-bottom-ig {
+  letter-spacing: -0.02em;
+}
+.earth-text-all #earth-text-bottom .text-bottom-l {
+  letter-spacing: -0.02em;
+}
+.earth-text-all #earth-text-bottom .text-bottom-t2 {
+  letter-spacing: 0.02em;
+}
+.earth-text-all #earth-text-bottom .text-bottom-kr {
+  letter-spacing: -0.04em;
+}
+.earth-text-all #earth-text-bottom .text-bottom-e {
+  letter-spacing: -0.02em;
+}
+.earth-text-all #earth-text-bottom .text-bottom-t3 {
+  letter-spacing: -0.03em;
+}
+.earth-text-all #earth-text-middle {
+  z-index: 3;
+  position: absolute;
+  max-width: 42.4%;
+  top: 79%;
+  left: 34%;
+  font-size: 94.9px;
+}
+.earth-text-all #earth-text-middle .text-g {
+  letter-spacing: 0.05em;
+}
+.earth-text-all #earth-text-middle .text-v {
+  letter-spacing: -0.02em;
+}
+.earth-text-all #earth-text-middle .text-r {
+  letter-spacing: -0.04em;
+}
+.earth-text-all #earth-text-middle .text-jo {
+  letter-spacing: 0em;
+}
+.earth-text-all #earth-text-right-top {
+  z-index: 3;
+  position: absolute;
+  max-width: 13.2%;
+  top: 66.2%;
+  left: 83.2%;
+}
+.earth-text-all #earth-text-right-top .text-right-top {
+  fill: #231f20;
+  stroke-width: 0px;
+}
+.earth-text-all #earth-text-right-bottom {
+  z-index: 3;
+  position: absolute;
+  max-width: 12.7%;
+  top: 89.2%;
+  left: 83.7%;
+}
+.earth-text-all #earth-text-right-bottom .text-right-bottom {
+  fill: #231f20;
+  stroke-width: 0px;
+}
+
+#qr-code {
+  position: absolute;
+  max-width: 8.6%;
+  top: 87.5%;
+  left: 0.9%;
+}
+
+.footer p {
+  z-index: 5;
+  position: absolute;
+  top: 93.4%;
+  left: 5.1%;
+  fill: #231f20;
+  font-family: Marydale-Bold, Marydale;
+  font-size: 1.145vw;
+  font-weight: 700;
+  max-width: 91%;
+  line-height: 120%;
+}
+.footer #footer-background {
+  z-index: 5;
+  position: absolute;
+  top: 94.1%;
+  fill: #fff;
+  stroke-width: 0px;
+}
+.footer #footer-background2 {
+  z-index: 5;
+  position: absolute;
+  top: 96.4%;
+  fill: #005ba7;
+  stroke-width: 0px;
+}
+.footer #footer-ntnu-logo {
+  z-index: 5;
+  position: absolute;
+  max-width: 30%;
+  top: 97.3%;
+  left: 4.9%;
+}
+.footer #footer-ntnu-logo .logo-ntnu {
+  fill: #fff;
+  stroke-width: 0px;
+}
+.footer #footer-divider1 {
+  z-index: 5;
+  position: absolute;
+  max-width: 0.29%;
+  top: 96.7%;
+  left: 36.4%;
+}
+.footer #footer-divider1 .divider {
+  fill: #fff;
+  stroke-width: 0px;
+}
+.footer #footer-divider2 {
+  z-index: 5;
+  position: absolute;
+  max-width: 0.29%;
+  top: 96.7%;
+  left: 69.4%;
+}
+.footer #footer-divider2 .divider {
+  fill: #fff;
+  stroke-width: 0px;
+}
+.footer #footer-text-middle {
+  z-index: 5;
+  position: absolute;
+  max-width: 28.3%;
+  top: 97.4%;
+  left: 38.9%;
+}
+.footer #footer-text-middle .footer-text {
+  fill: #fff;
+  stroke-width: 0px;
+}
+.footer #footer-text-right {
+  z-index: 5;
+  position: absolute;
+  max-width: 17.8%;
+  top: 97.7%;
+  left: 77.1%;
+}
+.footer #footer-text-right text {
+  fill: #fff;
+  font-family: Marydale-Bold, Marydale;
+  font-size: 25.36px;
+  font-weight: 700;
+}
+.footer #footer-text-right .footer-text-u {
+  letter-spacing: -0.04em;
+}
+.footer #footer-text-right .footer-text-i {
+  letter-spacing: -0.03em;
+}
+.footer #footer-text-right .footer-text-c {
+  letter-spacing: -0.01em;
+}
+.footer #footer-text-right .footer-text-l {
+  letter-spacing: -0.02em;
+}
+.footer #footer-text-right .footer-text-c2 {
+  letter-spacing: -0.06em;
+}
+.footer #footer-text-right .footer-text-onosent {
+  letter-spacing: 0em;
+}
+.footer #footer-text-right .footer-text-k {
+  letter-spacing: -0.05em;
+}
+.footer #footer-text-right .footer-text-t {
+  letter-spacing: -0.03em;
+}
+
+.fill-white {
+  fill: #fff;
+}
+
+.fill-blue {
+  fill: #005ba7;
+}
+
+.fill-moonGrey1 {
+  fill: #B4B6B7;
+}
+
+.fill-moonGrey2 {
+  fill: #EAEAE9;
+}
+
+.fill-darkGrey {
+  fill: #231f20;
+}
+
+.fill-yellow {
+  fill: #f5ec43;
+}
+
+.fill-pantsColor2 {
+  fill: #c77161;
+}
+
+.marydale-black {
+  fill: #231f20;
+  font-family: Marydale-Bold, Marydale;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.marydale-white {
+  fill: #fff;
+  font-family: Marydale-Bold, Marydale;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.blue-background {
+  fill: #00b1dc;
+  opacity: 0.15;
+}
+
+.red-background {
+  fill: #c77161;
+  opacity: 0.38;
+}
+
+.fill-green {
+  fill: #0fa15c;
+}
+
+#background-1, #background-2, #background-3, #background-4, #text-1, #text-2, #text-3 {
+  position: absolute;
+}
+
+#background-1 {
+  z-index: 4;
+  top: 0;
+  left: 0;
+}
+
+#background-2 {
+  z-index: 3;
+  top: 1.1%;
+}
+
+#background-3 {
+  z-index: 2;
+  top: 24.7%;
+}
+
+#background-4 {
+  z-index: 1;
+  bottom: 11.86%;
+}
+
+.animated-element {
+  position: absolute;
+  z-index: 10;
+}
+
+#text-1, #text-2, #text-3 {
+  left: 5.1%;
+  z-index: 5;
+}
+
+#text-1, #text-2 {
+  max-width: 30%;
+}
+
+#text-1 {
+  top: 3.65%;
+}
+
+#text-2 {
+  top: 11.3%;
+}
+
+#text-3 {
+  top: 21.9%;
+  max-width: 44.8%;
+}
+
+#curved-text {
+  top: 33.2%;
+  left: 2%;
+  width: 38.0641330166%;
+  height: 16.3301662708%;
+}
+#curved-text path {
+  fill: #000;
+}
+
+#car {
+  width: 100%;
+  top: -150%;
+  left: -200%;
+  z-index: 10;
+}
+#car g {
+  transform: scale(18%);
+}
+
+#moon {
+  top: 10.6%;
+  left: 65.1%;
+  width: 23.45%;
+  height: 22.8028503563%;
+}
+
+#star-1 {
+  top: 9.55%;
+  left: 84%;
+  width: 6.6508313539%;
+  height: 7.3040380048%;
+  animation-duration: 0.8s;
+}
+#star-1 path {
+  fill: #f5ec43;
+}
+
+#star-2 {
+  top: 16.8%;
+  left: 90%;
+  width: 4.9881235154%;
+  height: 5.0475059382%;
+  animation-duration: 1.2s;
+}
+#star-2 path {
+  fill: #f5ec43;
+}
+
+#star-1, #star-2 {
+  animation-name: starShake;
+  animation-iteration-count: infinite;
+}
+
+@keyframes starShake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@media (min-width: 100px) {
+  #car {
+    top: -70%;
+    left: -200%;
+  }
+}
+@media (min-width: 200px) {
+  #car {
+    top: -30%;
+    left: -34%;
+  }
+}
+@media (min-width: 300px) {
+  #car {
+    top: 0;
+  }
+}
+@media (min-width: 400px) {
+  #car {
+    top: 10%;
+  }
+}
+@media (min-width: 600px) {
+  #car {
+    top: 20%;
+  }
+}
+@media (min-width: 840px) {
+  #car {
+    top: 25%;
+    left: -34%;
+  }
+}
+@media (min-width: 875px) {
+  .footer p {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
