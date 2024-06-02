@@ -4,8 +4,7 @@
   position: relative;
   overflow: hidden;
 }
-
-#background {
+.poster__background {
   max-width: 100%;
   max-height: 100%;
   opacity: 50%;
@@ -14,175 +13,155 @@
   pointer-events: none;
 }
 
-.clouds #cloud1 {
+.clouds > * {
   z-index: 11;
   position: absolute;
+}
+.clouds #cloud_1 {
   max-width: 3.9%;
   top: 52.5%;
   left: 11.4%;
 }
-.clouds #cloud2 {
-  z-index: 11;
-  position: absolute;
+.clouds #cloud_2 {
   max-width: 3.9%;
   top: 50.7%;
   left: 27.1%;
 }
-.clouds #cloud-brows1 {
-  z-index: 11;
-  position: absolute;
+.clouds #cloud-brows_1 {
   max-width: 6%;
   top: 45.5%;
   left: 29.5%;
 }
-.clouds #cloud3 {
-  z-index: 11;
-  position: absolute;
+.clouds #cloud_3 {
   max-width: 3.9%;
   top: 54.4%;
   left: 34.1%;
 }
-.clouds #cloud4 {
-  z-index: 11;
-  position: absolute;
+.clouds #cloud_4 {
   max-width: 3.9%;
   top: 48.8%;
   left: 36.1%;
 }
-.clouds #cloud5 {
-  z-index: 11;
-  position: absolute;
+.clouds #cloud_5 {
   max-width: 3.9%;
   top: 46.4%;
   left: 44.2%;
 }
-.clouds #cloud-brows2 {
-  z-index: 11;
-  position: absolute;
+.clouds #cloud-brows_2 {
   max-width: 9.7%;
   top: 44%;
   left: 55.3%;
 }
-.clouds #cloud-brows3 {
-  z-index: 11;
-  position: absolute;
+.clouds #cloud-brows_3 {
   max-width: 5.9%;
   top: 39.8%;
   left: 72%;
 }
-.clouds #cloud6 {
-  z-index: 11;
-  position: absolute;
+.clouds #cloud_6 {
   max-width: 3.9%;
   top: 46.3%;
   left: 73.5%;
 }
-.clouds #cloud7 {
-  z-index: 11;
-  position: absolute;
+.clouds #cloud_7 {
   max-width: 3.9%;
   top: 43.55%;
   left: 81.3%;
 }
-.clouds #cloud8 {
-  z-index: 11;
-  position: absolute;
+.clouds #cloud_8 {
   max-width: 3.9%;
   top: 52.15%;
   left: 82.75%;
 }
-.clouds .cloud-eyes {
+.clouds__eyes {
   fill: #fff;
   stroke-width: 4.6px;
   stroke: #0a0203;
 }
-.clouds .cloud-pupils {
+.clouds__pupils {
   fill: #a1cf6d;
 }
-.clouds .cloud-mouth {
+.clouds__mouth {
   stroke: #0a0203;
 }
-.clouds .cloud-fill {
+.clouds__fill {
   fill: #a1cf6d;
 }
 
-.characters #character-left {
-  z-index: 3;
+.child svg {
+  z-index: 4;
   position: absolute;
-  max-width: 21.8%;
-  top: 53%;
-  left: 12%;
 }
-.characters #character-left #character-left-skin {
-  fill: #ad9282;
-}
-.characters #character-left #character-left-pants {
-  fill: #a1cf6d;
-}
-.characters #character-left #character-left-shirt {
-  fill: #f5ec43;
-}
-.characters #character-middle {
-  z-index: 3;
-  position: absolute;
-  max-width: 17.5%;
-  top: 49.7%;
-  left: 39.9%;
-}
-.characters #character-middle .character-middle-skin {
-  fill: #fce0ce;
-}
-.characters #character-middle #character-middle-shirt {
-  fill: #00b1dc;
-}
-.characters #character-middle #character-middle-pants {
-  fill: #c77161;
-}
-.characters #character-right {
-  z-index: 3;
-  position: absolute;
-  max-width: 24.1%;
-  top: 47%;
-  left: 59.5%;
-}
-.characters #character-right #character-right-skin {
-  fill: #816c5d;
-}
-.characters #character-right #character-right-pants {
-  fill: #f5ec43;
-}
-.characters #character-right #character-right-shirt {
-  fill: #a1cf6d;
-}
-.characters .stroke {
+.child__stroke {
   stroke: #0a0203;
   stroke-width: 4.6px;
 }
-.characters .character-eye {
+.child__eye {
   fill: #fff;
 }
-.characters .character-card {
+.child__card {
   fill: none;
   stroke: #fff;
   stroke-width: 4.6px;
 }
 
-.planet .earth-eye-white {
+.childOne {
+  max-width: 21.8%;
+  top: 53%;
+  left: 12%;
+}
+.childOne__skin {
+  fill: #ad9282;
+}
+.childOne__pants {
+  fill: #a1cf6d;
+}
+.childOne__shirt {
+  fill: #f5ec43;
+}
+
+.childTwo {
+  max-width: 17.5%;
+  top: 49.7%;
+  left: 39.9%;
+}
+.childTwo__skin {
+  fill: #fce0ce;
+}
+.childTwo__shirt {
+  fill: #00b1dc;
+}
+.childTwo__pants {
+  fill: #c77161;
+}
+
+.childThree {
+  max-width: 24.1%;
+  top: 47%;
+  left: 59.5%;
+}
+.childThree__skin {
+  fill: #816c5d;
+}
+.childThree__pants {
+  fill: #f5ec43;
+}
+.childThree__shirt {
+  fill: #a1cf6d;
+}
+
+.planet__eye--white {
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
   z-index: 4;
-  animation-name: eyeShaking;
-  animation-duration: 0.22s;
-  animation-iteration-count: infinite;
 }
-.planet .eye-left {
+.planet__eye--left {
   width: 8%;
   height: 7%;
   top: 88.5%;
   left: 26%;
 }
-.planet .eye-right {
+.planet__eye--right {
   width: 7%;
   height: 7%;
   top: 90.5%;
@@ -205,29 +184,29 @@
     transform: translateX(0);
   }
 }
-.planet #earth {
+.planet .earth {
   z-index: 3;
   position: absolute;
   top: 63.2%;
 }
-.planet #earth .earth-ocean-fill {
+.planet .earth__ocean {
   fill: #00b1dc;
 }
-.planet #earth .earth-eye-black {
+.planet .earth__eye--black {
   fill: #231f20;
 }
-.planet #earth .earth-land {
+.planet .earth__land {
   fill: #a1cf6d;
   stroke-width: 4.6px;
   stroke: #231f20;
 }
 
-.earth-text-all {
+.earthText {
   fill: #231f20;
   font-family: Marydale-Bold, Marydale;
   font-weight: 700;
 }
-.earth-text-all #earth-text-left {
+.earthText__left {
   z-index: 3;
   position: absolute;
   max-width: 13.6%;
@@ -235,34 +214,34 @@
   left: 10.5%;
   font-size: 30px;
 }
-.earth-text-all #earth-text-left .text-left-g {
+.earthText__left .text-left-g {
   letter-spacing: -0.02em;
 }
-.earth-text-all #earth-text-left .text-left-yn {
+.earthText__left .text-left-yn {
   letter-spacing: 0.02em;
 }
-.earth-text-all #earth-text-left .text-left-ttft {
+.earthText__left .text-left-ttft {
   letter-spacing: -0.06em;
 }
-.earth-text-all #earth-text-left .text-left-u {
+.earthText__left .text-left-u {
   letter-spacing: -0.02em;
 }
-.earth-text-all #earth-text-left .text-left-lda {
+.earthText__left .text-left-lda {
   letter-spacing: -0.02em;
 }
-.earth-text-all #earth-text-left .text-left-r {
+.earthText__left .text-left-r {
   letter-spacing: -0.04em;
 }
-.earth-text-all #earth-text-left .text-left-fef {
+.earthText__left .text-left-fef {
   letter-spacing: -0.02em;
 }
-.earth-text-all #earth-text-left .text-left-t {
+.earthText__left .text-left-t {
   letter-spacing: -0.03em;
 }
-.earth-text-all #earth-text-left .text-left-a {
+.earthText__left .text-left-a {
   letter-spacing: 0em;
 }
-.earth-text-all #earth-text-top {
+.earthText__top {
   z-index: 3;
   position: absolute;
   max-width: 31.5%;
@@ -270,31 +249,31 @@
   left: 43.9%;
   font-size: 30px;
 }
-.earth-text-all #earth-text-top .text-top-t {
+.earthText__top .text-top-t {
   letter-spacing: -0.06em;
 }
-.earth-text-all #earth-text-top .text-top-i {
+.earthText__top .text-top-i {
   letter-spacing: -0.02em;
 }
-.earth-text-all #earth-text-top .text-top-lfrud {
+.earthText__top .text-top-lfrud {
   letter-spacing: -0.02em;
 }
-.earth-text-all #earth-text-top .text-top-kk {
+.earthText__top .text-top-kk {
   letter-spacing: -0.04em;
 }
-.earth-text-all #earth-text-top .text-top-e {
+.earthText__top .text-top-e {
   letter-spacing: -0.02em;
 }
-.earth-text-all #earth-text-top .text-top-kr {
+.earthText__top .text-top-kr {
   letter-spacing: -0.05em;
 }
-.earth-text-all #earth-text-top .text-top-r {
+.earthText__top .text-top-r {
   letter-spacing: 0.02em;
 }
-.earth-text-all #earth-text-top .text-top-t2 {
+.earthText__top .text-top-t2 {
   letter-spacing: 0.02em;
 }
-.earth-text-all #earth-text-bottom {
+.earthText__bottom {
   z-index: 3;
   position: absolute;
   max-width: 10.3%;
@@ -302,31 +281,31 @@
   left: 46.7%;
   font-size: 30px;
 }
-.earth-text-all #earth-text-bottom .text-bottom-n {
+.earthText__bottom .text-bottom-n {
   letter-spacing: 0.02em;
 }
-.earth-text-all #earth-text-bottom .text-bottom-t {
+.earthText__bottom .text-bottom-t {
   letter-spacing: -0.06em;
 }
-.earth-text-all #earth-text-bottom .text-bottom-ig {
+.earthText__bottom .text-bottom-ig {
   letter-spacing: -0.02em;
 }
-.earth-text-all #earth-text-bottom .text-bottom-l {
+.earthText__bottom .text-bottom-l {
   letter-spacing: -0.02em;
 }
-.earth-text-all #earth-text-bottom .text-bottom-t2 {
+.earthText__bottom .text-bottom-t2 {
   letter-spacing: 0.02em;
 }
-.earth-text-all #earth-text-bottom .text-bottom-kr {
+.earthText__bottom .text-bottom-kr {
   letter-spacing: -0.04em;
 }
-.earth-text-all #earth-text-bottom .text-bottom-e {
+.earthText__bottom .text-bottom-e {
   letter-spacing: -0.02em;
 }
-.earth-text-all #earth-text-bottom .text-bottom-t3 {
+.earthText__bottom .text-bottom-t3 {
   letter-spacing: -0.03em;
 }
-.earth-text-all #earth-text-middle {
+.earthText__middle {
   z-index: 3;
   position: absolute;
   max-width: 42.4%;
@@ -334,39 +313,31 @@
   left: 34%;
   font-size: 94.9px;
 }
-.earth-text-all #earth-text-middle .text-g {
+.earthText__middle .text-g {
   letter-spacing: 0.05em;
 }
-.earth-text-all #earth-text-middle .text-v {
+.earthText__middle .text-v {
   letter-spacing: -0.02em;
 }
-.earth-text-all #earth-text-middle .text-r {
+.earthText__middle .text-r {
   letter-spacing: -0.04em;
 }
-.earth-text-all #earth-text-middle .text-jo {
+.earthText__middle .text-jo {
   letter-spacing: 0em;
 }
-.earth-text-all #earth-text-right-top {
+.earthText__rightTop {
   z-index: 3;
   position: absolute;
   max-width: 13.2%;
   top: 66.2%;
   left: 83.2%;
 }
-.earth-text-all #earth-text-right-top .text-right-top {
-  fill: #231f20;
-  stroke-width: 0px;
-}
-.earth-text-all #earth-text-right-bottom {
+.earthText__rightBottom {
   z-index: 3;
   position: absolute;
   max-width: 12.7%;
   top: 89.2%;
   left: 83.7%;
-}
-.earth-text-all #earth-text-right-bottom .text-right-bottom {
-  fill: #231f20;
-  stroke-width: 0px;
 }
 
 #qr-code {
@@ -388,179 +359,166 @@
   max-width: 91%;
   line-height: 120%;
 }
-.footer #footer-background {
+.footer__background {
   z-index: 5;
   position: absolute;
   top: 94.1%;
   fill: #fff;
   stroke-width: 0px;
 }
-.footer #footer-background2 {
+.footer__background2 {
   z-index: 5;
   position: absolute;
   top: 96.4%;
   fill: #005ba7;
   stroke-width: 0px;
 }
-.footer #footer-ntnu-logo {
+.footer__ntnuLogo {
   z-index: 5;
   position: absolute;
   max-width: 30%;
   top: 97.3%;
   left: 4.9%;
 }
-.footer #footer-ntnu-logo .logo-ntnu {
+.footer__ntnuLogo .logo-ntnu {
   fill: #fff;
   stroke-width: 0px;
 }
-.footer #footer-divider1 {
+.footer__divider1 {
   z-index: 5;
   position: absolute;
   max-width: 0.29%;
   top: 96.7%;
   left: 36.4%;
 }
-.footer #footer-divider1 .divider {
+.footer__divider1 .divider {
   fill: #fff;
   stroke-width: 0px;
 }
-.footer #footer-divider2 {
+.footer__divider2 {
   z-index: 5;
   position: absolute;
   max-width: 0.29%;
   top: 96.7%;
   left: 69.4%;
 }
-.footer #footer-divider2 .divider {
+.footer__divider2 .divider {
   fill: #fff;
   stroke-width: 0px;
 }
-.footer #footer-text-middle {
+.footer__textMiddle {
   z-index: 5;
   position: absolute;
   max-width: 28.3%;
   top: 97.4%;
   left: 38.9%;
 }
-.footer #footer-text-middle .footer-text {
+.footer__textMiddle .footer-text {
   fill: #fff;
   stroke-width: 0px;
 }
-.footer #footer-text-right {
+.footer__textRight {
   z-index: 5;
   position: absolute;
   max-width: 17.8%;
   top: 97.7%;
   left: 77.1%;
 }
-.footer #footer-text-right text {
+.footer__textRight text {
   fill: #fff;
   font-family: Marydale-Bold, Marydale;
   font-size: 25.36px;
   font-weight: 700;
 }
-.footer #footer-text-right .footer-text-u {
+.footer__textRight #footer-text-u {
   letter-spacing: -0.04em;
 }
-.footer #footer-text-right .footer-text-i {
+.footer__textRight #footer-text-i {
   letter-spacing: -0.03em;
 }
-.footer #footer-text-right .footer-text-c {
+.footer__textRight #footer-text-c {
   letter-spacing: -0.01em;
 }
-.footer #footer-text-right .footer-text-l {
+.footer__textRight #footer-text-l {
   letter-spacing: -0.02em;
 }
-.footer #footer-text-right .footer-text-c2 {
+.footer__textRight #footer-text-c2 {
   letter-spacing: -0.06em;
 }
-.footer #footer-text-right .footer-text-onosent {
+.footer__textRight #footer-text-onosent {
   letter-spacing: 0em;
 }
-.footer #footer-text-right .footer-text-k {
+.footer__textRight #footer-text-k {
   letter-spacing: -0.05em;
 }
-.footer #footer-text-right .footer-text-t {
+.footer__textRight #footer-text-t {
   letter-spacing: -0.03em;
 }
 
-.fill-white {
+.fill--white {
   fill: #fff;
 }
-
-.fill-blue {
+.fill--blue {
   fill: #005ba7;
 }
-
-.fill-moonGrey1 {
+.fill--moonGrey1 {
   fill: #B4B6B7;
 }
-
-.fill-moonGrey2 {
+.fill--moonGrey2 {
   fill: #EAEAE9;
 }
-
-.fill-darkGrey {
+.fill--darkGrey {
   fill: #231f20;
 }
-
-.fill-yellow {
+.fill--yellow {
   fill: #f5ec43;
 }
-
-.fill-pantsColor2 {
+.fill--green {
+  fill: #0fa15c;
+}
+.fill--pantsColor2 {
   fill: #c77161;
 }
 
-.marydale-black {
-  fill: #231f20;
-  font-family: Marydale-Bold, Marydale;
-  font-size: 36px;
-  font-weight: 700;
-}
-
-.marydale-white {
-  fill: #fff;
-  font-family: Marydale-Bold, Marydale;
-  font-size: 45px;
-  font-weight: 700;
-}
-
-.blue-background {
+.background--blue {
   fill: #00b1dc;
   opacity: 0.15;
 }
-
-.red-background {
+.background--red {
   fill: #c77161;
   opacity: 0.38;
 }
 
-.fill-green {
-  fill: #0fa15c;
+.marydale {
+  font-family: Marydale-Bold, Marydale;
+  font-weight: 700;
+}
+.marydale--black {
+  fill: #231f20;
+  font-size: 36px;
+}
+.marydale--white {
+  fill: #fff;
+  font-size: 45px;
 }
 
-#background-1, #background-2, #background-3, #background-4, #text-1, #text-2, #text-3 {
+.backgrounds svg {
   position: absolute;
 }
-
-#background-1 {
+.backgrounds__one {
   z-index: 4;
   top: 0;
   left: 0;
 }
-
-#background-2 {
+.backgrounds__two {
   z-index: 3;
   top: 1.1%;
 }
-
-#background-3 {
+.backgrounds__three {
   z-index: 2;
   top: 24.7%;
 }
-
-#background-4 {
+.backgrounds__four {
   z-index: 1;
   bottom: 11.86%;
 }
@@ -570,80 +528,69 @@
   z-index: 10;
 }
 
-#text-1, #text-2, #text-3 {
+.textTop svg {
   left: 5.1%;
   z-index: 5;
+  position: absolute;
 }
-
-#text-1, #text-2 {
+.textTop__one, .textTop__two {
   max-width: 30%;
 }
-
-#text-1 {
+.textTop__one {
   top: 3.65%;
 }
-
-#text-2 {
+.textTop__two {
   top: 11.3%;
 }
-
-#text-3 {
+.textTop__three {
   top: 21.9%;
   max-width: 44.8%;
 }
 
-#curved-text {
+.carText__curvedText {
   top: 33.2%;
   left: 2%;
   width: 38.0641330166%;
   height: 16.3301662708%;
 }
-#curved-text path {
+.carText__curvedText path {
   fill: #000;
 }
-
-#car {
+.carText__car {
   width: 100%;
   top: -150%;
   left: -200%;
   z-index: 10;
 }
-#car g {
+.carText__car g {
   transform: scale(18%);
 }
 
-#moon {
+.sky__moon {
   top: 10.6%;
   left: 65.1%;
   width: 23.45%;
   height: 22.8028503563%;
 }
-
-#star-1 {
+.sky__starTop {
   top: 9.55%;
   left: 84%;
   width: 6.6508313539%;
   height: 7.3040380048%;
   animation-duration: 0.8s;
 }
-#star-1 path {
+.sky__starTop path {
   fill: #f5ec43;
 }
-
-#star-2 {
+.sky__starBottom {
   top: 16.8%;
   left: 90%;
   width: 4.9881235154%;
   height: 5.0475059382%;
   animation-duration: 1.2s;
 }
-#star-2 path {
+.sky__starBottom path {
   fill: #f5ec43;
-}
-
-#star-1, #star-2 {
-  animation-name: starShake;
-  animation-iteration-count: infinite;
 }
 
 @keyframes starShake {
@@ -661,34 +608,34 @@
   }
 }
 @media (min-width: 100px) {
-  #car {
+  .carText__car {
     top: -70%;
     left: -200%;
   }
 }
 @media (min-width: 200px) {
-  #car {
+  .carText__car {
     top: -30%;
     left: -34%;
   }
 }
 @media (min-width: 300px) {
-  #car {
+  .carText__car {
     top: 0;
   }
 }
 @media (min-width: 400px) {
-  #car {
+  .carText__car {
     top: 10%;
   }
 }
 @media (min-width: 600px) {
-  #car {
+  .carText__car {
     top: 20%;
   }
 }
 @media (min-width: 840px) {
-  #car {
+  .carText__car {
     top: 25%;
     left: -34%;
   }
@@ -697,4 +644,22 @@
   .footer p {
     font-size: 10px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+.carText__car, .clouds {
+  display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sky__starTop, .sky__starBottom {
+    animation-name: starShake;
+    animation-iteration-count: infinite;
+  }
+  .carText__car, .clouds {
+    display: block;
+  }
+  .planet__eye--white {
+    animation-name: eyeShaking;
+    animation-duration: 0.22s;
+    animation-iteration-count: infinite;
+  }
+}

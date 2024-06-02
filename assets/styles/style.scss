@@ -20,209 +20,174 @@ $black: #000;
   max-height: 1192px;
   position: relative;
   overflow: hidden;
-}
-
-#background {
-  max-width: 100%;
-  max-height: 100%;
-  opacity: 50%;
-  position: inherit;
-  z-index: 100;
-  pointer-events: none;
+  &__background {
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 50%;
+    position: inherit;
+    z-index: 100;
+    pointer-events: none;
+  }
 }
 
 .clouds {
-  #cloud1 {
+  & > * {
     z-index: 11;
     position: absolute;
+  }
+  #cloud_1 {
     max-width: 3.9%;
     top: 52.5%;
     left: 11.4%;
   }
-  #cloud2 {
-    z-index: 11;
-    position: absolute;
+  #cloud_2 {
     max-width: 3.9%;
     top: 50.7%;
     left: 27.1%;
   }
-  #cloud-brows1 {
-    z-index: 11;
-    position: absolute;
+  #cloud-brows_1 {
     max-width: 6%;
     top: 45.5%;
     left: 29.5%;
   }
-  #cloud3 {
-    z-index: 11;
-    position: absolute;
+  #cloud_3 {
     max-width: 3.9%;
     top: 54.4%;
     left: 34.1%;
   }
-  #cloud4 {
-    z-index: 11;
-    position: absolute;
+  #cloud_4 {
     max-width: 3.9%;
     top: 48.8%;
     left: 36.1%;
   }
-  #cloud5 {
-    z-index: 11;
-    position: absolute;
+  #cloud_5 {
     max-width: 3.9%;
     top: 46.4%;
     left: 44.2%;
   }
-  #cloud-brows2 {
-    z-index: 11;
-    position: absolute;
+  #cloud-brows_2 {
     max-width: 9.7%;
     top: 44%;
     left: 55.3%;
   }
-  #cloud-brows3 {
-    z-index: 11;
-    position: absolute;
+  #cloud-brows_3 {
     max-width: 5.9%;
     top: 39.8%;
     left: 72%;
   }
-  #cloud6 {
-    z-index: 11;
-    position: absolute;
+  #cloud_6 {
     max-width: 3.9%;
     top: 46.3%;
     left: 73.5%;
   }
-  #cloud7 {
-    z-index: 11;
-    position: absolute;
+  #cloud_7 {
     max-width: 3.9%;
     top: 43.55%;
     left: 81.3%;
   }
-  #cloud8 {
-    z-index: 11;
-    position: absolute;
+  #cloud_8 {
     max-width: 3.9%;
     top: 52.15%;
     left: 82.75%;
   }
 
-  .cloud-eyes {
+  &__eyes {
     fill: $white;
     stroke-width: 4.6px;
     stroke: $dark;
   }
 
-  .cloud-pupils {
+  &__pupils {
     fill: $primaryGreen;
   }
 
-  .cloud-mouth {
+  &__mouth {
     stroke: $dark;
   }
 
-  .cloud-fill {
+  &__fill {
     fill: $primaryGreen;
   }
 }
 
-.characters {
-  #character-left {
-    z-index: 3;
+.child {
+  & svg {
+    z-index: 4;
     position: absolute;
-    max-width: 21.8%;
-    top: 53%;
-    left: 12%;
-
-    #character-left-skin {
-      fill: $skinColor;
-    }
-
-    #character-left-pants {
-      fill: $primaryGreen;
-    }
-
-    #character-left-shirt {
-      fill: $yellow;
-    }
   }
-
-  #character-middle {
-    z-index: 3;
-    position: absolute;
-    max-width: 17.5%;
-    top: 49.7%;
-    left: 39.9%;
-
-    .character-middle-skin {
-      fill: $skinColor2;
-    }
-    
-    #character-middle-shirt {
-      fill: $primaryBlue;
-    }
-
-    #character-middle-pants {
-      fill: $pantsColor2;
-    }
-  }
-
-  #character-right {
-    z-index: 3;
-    position: absolute;
-    max-width: 24.1%;
-    top: 47%;
-    left: 59.5%;
-
-    #character-right-skin {
-      fill: $skinColor3;
-    }
-
-    #character-right-pants {
-      fill: $yellow;
-    }
-
-    #character-right-shirt {
-      fill: $primaryGreen;
-    }
-  }
-
-  .stroke {
+  &__stroke {
     stroke: $dark;
     stroke-width: 4.6px;
   }
-
-  .character-eye {
+  &__eye {
       fill: $white;
   }
-
-  .character-card {
+  &__card {
       fill: none;
       stroke: $white;
       stroke-width: 4.6px;
   }
 }
+.childOne {
+  max-width: 21.8%;
+  top: 53%;
+  left: 12%;
+  &__skin {
+    fill: $skinColor;
+  }
+  &__pants {
+    fill: $primaryGreen;
+  }
+  &__shirt {
+    fill: $yellow;
+  }
+}
+.childTwo {
+  max-width: 17.5%;
+  top: 49.7%;
+  left: 39.9%;
+  &__skin {
+    fill: $skinColor2;
+  }
+
+  &__shirt {
+    fill: $primaryBlue;
+  }
+  &__pants {
+    fill: $pantsColor2;
+  }
+}
+.childThree {
+  max-width: 24.1%;
+  top: 47%;
+  left: 59.5%;
+  &__skin {
+    fill: $skinColor3;
+  }
+
+  &__pants {
+    fill: $yellow;
+  }
+
+  &__shirt {
+    fill: $primaryGreen;
+  }
+}
 
 .planet {
-  .earth-eye-white {
+  &__eye--white {
     background-color: $white;
     border-radius: 50%;
     position: absolute;
     z-index: 4;
-    animation-name: eyeShaking;
-    animation-duration: 0.22s;
-    animation-iteration-count: infinite;
   }
-  .eye-left {
+  &__eye--left {
     width: 8%;
     height: 7%;
     top: 88.5%;
     left: 26%;
   }
-  .eye-right {
+  &__eye--right {
     width: 7%;
     height: 7%;
     top: 90.5%;
@@ -230,210 +195,168 @@ $black: #000;
   }
   @keyframes eyeShaking {
     0% { transform: translateX(0) }
- 25% { transform: translateX(6%) }
- 50% { transform: translateX(-6%) }
- 75% { transform: translateX(6%) }
- 100% { transform: translateX(0) }
+    25% { transform: translateX(6%) }
+    50% { transform: translateX(-6%) }
+    75% { transform: translateX(6%) }
+    100% { transform: translateX(0) }
   }
-  #earth {
-  z-index: 3;
-  position: absolute;
-  top: 63.2%;
+  .earth {
+    z-index: 3;
+    position: absolute;
+    top: 63.2%;
 
-  .earth-ocean-fill {
-  fill: $primaryBlue;
-  }
+    &__ocean {
+    fill: $primaryBlue;
+    }
 
-  .earth-eye-black {
-  fill: $darkGrey;
-  }
+    &__eye--black {
+    fill: $darkGrey;
+    }
 
-  .earth-land {
-    fill: $primaryGreen;
-    stroke-width: 4.6px;
-    stroke: $darkGrey;
-  }
+    &__land {
+      fill: $primaryGreen;
+      stroke-width: 4.6px;
+      stroke: $darkGrey;
+    }
   }
 }
 
-.earth-text-all {
+.earthText {
   fill: $darkGrey;
   font-family: Marydale-Bold, Marydale;
   font-weight: 700;
-
-  #earth-text-left {
+  &__left {
     z-index: 3;
     position: absolute;
     max-width: 13.6%;
     top: 76.1%;
     left: 10.5%;
     font-size: 30px;
-
     .text-left-g {
       letter-spacing: -0.02em;
     }
-
     .text-left-yn {
       letter-spacing: 0.02em;
     }
-
     .text-left-ttft {
       letter-spacing: -0.06em;
     }
-
     .text-left-u {
       letter-spacing: -0.02em;
     }
-
     .text-left-lda {
       letter-spacing: -0.02em;
     }
-
     .text-left-r {
       letter-spacing: -0.04em;
     }
-
     .text-left-fef {
       letter-spacing: -0.02em;
     }
-
     .text-left-t {
       letter-spacing: -0.03em;
     }
-
     .text-left-a {
       letter-spacing: 0em;
     }
   }
-    #earth-text-top {
+  &__top {
     z-index: 3;
     position: absolute;
     max-width: 31.5%;
     top: 67.8%;
     left: 43.9%;
     font-size: 30px;
-
     .text-top-t {
       letter-spacing: -0.06em;
     }
-
     .text-top-i {
       letter-spacing: -0.02em;
     }
-
     .text-top-lfrud {
       letter-spacing: -0.02em;
     }
-
     .text-top-kk {
       letter-spacing: -0.04em;
     }
-
     .text-top-e {
       letter-spacing: -0.02em;
     }
-
     .text-top-kr {
       letter-spacing: -0.05em;
     }
-
     .text-top-r {
       letter-spacing: 0.02em;
     }
-
     .text-top-t2 {
       letter-spacing: 0.02em;
     }
   }
-
-  #earth-text-bottom {
-  z-index: 3;
-  position: absolute;
-  max-width: 10.3%;
-  top: 86.5%;
-  left: 46.7%;
-  font-size: 30px;
-
-  .text-bottom-n {
-    letter-spacing: 0.02em;
-  }
-
-  .text-bottom-t {
-    letter-spacing: -0.06em;
-  }
-    
-  .text-bottom-ig {
-      letter-spacing: -0.02em;
-  }
-
-  .text-bottom-l {
-      letter-spacing: -0.02em;
-  }
-
-  .text-bottom-t2 {
+  &__bottom {
+    z-index: 3;
+    position: absolute;
+    max-width: 10.3%;
+    top: 86.5%;
+    left: 46.7%;
+    font-size: 30px;
+    .text-bottom-n {
       letter-spacing: 0.02em;
+    }
+    .text-bottom-t {
+      letter-spacing: -0.06em;
+    }
+    .text-bottom-ig {
+        letter-spacing: -0.02em;
+    }
+    .text-bottom-l {
+        letter-spacing: -0.02em;
+    }
+    .text-bottom-t2 {
+        letter-spacing: 0.02em;
+    }
+    .text-bottom-kr {
+        letter-spacing: -0.04em;
+    }
+    .text-bottom-e {
+        letter-spacing: -0.02em;
+    }
+    .text-bottom-t3 {
+        letter-spacing: -0.03em;
+    }
   }
-
-  .text-bottom-kr {
-      letter-spacing: -0.04em;
-  }
-
-  .text-bottom-e {
-      letter-spacing: -0.02em;
-  }
-
-  .text-bottom-t3 {
-      letter-spacing: -0.03em;
-  }
-}
-
-#earth-text-middle {
+  &__middle {
     z-index: 3;
     position: absolute;
     max-width: 42.4%;
     top: 79%;
     left: 34%;
     font-size: 94.9px;
-
     .text-g {
       letter-spacing: 0.05em;
     }
-
     .text-v {
       letter-spacing: -0.02em;
     }
-
     .text-r {
       letter-spacing: -0.04em;
     }
-
     .text-jo {
       letter-spacing: 0em;
     }
   }
-  #earth-text-right-top {
-    z-index: 3;
-    position: absolute;
-    max-width: 13.2%;
-    top: 66.2%;
-    left: 83.2%;
-
-    .text-right-top {
-      fill: $darkGrey;
-      stroke-width: 0px;
-    }
+    &__rightTop {
+      z-index: 3;
+      position: absolute;
+      max-width: 13.2%;
+      top: 66.2%;
+      left: 83.2%;
   }
-  #earth-text-right-bottom {
-    z-index: 3;
-    position: absolute;
-    max-width: 12.7%;
-    top: 89.2%;
-    left: 83.7%;
-
-    .text-right-bottom {
-      fill: $darkGrey;
-      stroke-width: 0px;
-    }
+  &__rightBottom {
+      z-index: 3;
+      position: absolute;
+      max-width: 12.7%;
+      top: 89.2%;
+      left: 83.7%;
   }
 }
 
@@ -457,190 +380,175 @@ $black: #000;
     max-width: 91%;
     line-height: 120%;
   }
-
-  #footer-background {
+  &__background {
     z-index: 5;
     position: absolute;
     top: 94.1%;
     fill: $white;
     stroke-width: 0px;
   }
-  
-  #footer-background2 {
+  &__background2 {
     z-index: 5;
     position: absolute;
     top: 96.4%;
     fill: $darkBlue;
     stroke-width: 0px;
   }
-  
-  #footer-ntnu-logo {
+  &__ntnuLogo {
     z-index: 5;
     position: absolute;
     max-width: 30%;
     top: 97.3%;
     left: 4.9%;
-  
     .logo-ntnu {
     fill: $white;
     stroke-width: 0px;
   }
   }
-  
-  #footer-divider1 {
+  &__divider1 {
     z-index: 5;
     position: absolute;
     max-width: 0.29%;
     top: 96.7%;
     left: 36.4%;
-  
     .divider {
       fill: $white;
       stroke-width: 0px;  
     }
   }
-  
-  #footer-divider2 {
+  &__divider2 {
     z-index: 5;
     position: absolute;
     max-width: 0.29%;
     top: 96.7%;
     left: 69.4%;
-  
     .divider {
       fill: $white;
       stroke-width: 0px;
     }
   }
-  
-  
-  #footer-text-middle {
+  &__textMiddle {
     z-index: 5;
     position: absolute;
     max-width: 28.3%;
     top: 97.4%;
     left: 38.9%;
-  
     .footer-text {
       fill: $white;
       stroke-width: 0px;
     }
   }
-  
-  #footer-text-right {
+  &__textRight {
     z-index: 5;
     position: absolute;
     max-width: 17.8%;
     top: 97.7%;
     left: 77.1%;
-  
     text {
       fill: $white;
       font-family: Marydale-Bold, Marydale;
       font-size: 25.36px;
       font-weight: 700;
     }
-  
-    .footer-text-u {
+    #footer-text-u {
       letter-spacing: -0.04em;
     }
-  
-    .footer-text-i {
+    #footer-text-i {
       letter-spacing: -0.03em;
     }
-  
-    .footer-text-c {
+    #footer-text-c {
       letter-spacing: -0.01em;
     }
-  
-    .footer-text-l {
+    #footer-text-l {
       letter-spacing: -0.02em;
     }
-  
-    .footer-text-c2 {
+    #footer-text-c2 {
       letter-spacing: -0.06em;
     }
-  
-    .footer-text-onosent {
+    #footer-text-onosent {
       letter-spacing: 0em;
     }
-  
-    .footer-text-k {
+    #footer-text-k {
       letter-spacing: -0.05em;
     }
-  
-    .footer-text-t {
+    #footer-text-t {
       letter-spacing: -0.03em;
     }
   }
 }
 
 // SVG colors and font-family
-.fill-white {
+.fill {
+  &--white {
     fill: $white;
-}
-.fill-blue {
+  }
+  &--blue {
     fill: $darkBlue;
-}
-.fill-moonGrey1 {
+  }
+  &--moonGrey1 {
     fill: $moonGrey1;
-}
-.fill-moonGrey2 {
+  }
+  &--moonGrey2 {
     fill: $moonGrey2;
-}
-.fill-darkGrey {
+  }
+  &--darkGrey {
     fill: $darkGrey;
-}
-.fill-yellow {
+  }
+  &--yellow {
     fill: $yellow;
-}
-.fill-pantsColor2 {
+  }
+  &--green {
+    fill: $green;
+  }
+  &--pantsColor2 {
     fill: $pantsColor2;
+  }
 }
-.marydale-black {
-    fill: $darkGrey;
-    font-family: Marydale-Bold, Marydale;
-    font-size: 36px;
-    font-weight: 700;
-}
-.marydale-white {
-    fill: $white;
-    font-family: Marydale-Bold, Marydale;
-    font-size: 45px;
-    font-weight: 700;
-}
-.blue-background {
-    fill: $primaryBlue;
-    opacity: 0.15;
-}
-.red-background {
+.background {
+  &--blue {
+      fill: $primaryBlue;
+      opacity: 0.15;
+  }
+  &--red {
     fill: $pantsColor2;
     opacity: 0.38;
+  }
 }
-.fill-green {
-    fill: $green;
+.marydale {
+  font-family: Marydale-Bold, Marydale;
+  font-weight: 700;
+  &--black {
+    fill: $darkGrey;
+    font-size: 36px;
+  }
+  &--white {
+    fill: $white;
+    font-size: 45px;
+  }
 }
 
 // Background colors
-#background-1, #background-2, #background-3, #background-4, #text-1, #text-2, #text-3 {
+.backgrounds {
+  svg {
     position: absolute;
-}
-#background-1 {
+  }
+  &__one {
     z-index: 4;
     top: 0;
     left: 0;
-}
-#background-2 {
+  }
+  &__two {
     z-index: 3;
     top: 1.1%;
-}
-#background-3 {
+  }
+  &__three {
     z-index: 2;
     top: 24.7%;
-}
-#background-4 {
+  }
+  &__four {
     z-index: 1;
     bottom: 11.86%;
+  }
 }
 
 .animated-element {
@@ -649,52 +557,58 @@ $black: #000;
 }
 
 // Text at top of poster
-#text-1, #text-2, #text-3 {
+.textTop {
+  svg {
     left: 5.1%;
     z-index: 5;
-}
-#text-1, #text-2 {
+    position: absolute;
+  }
+  &__one, &__two {
     max-width: 30%;
- }
-#text-1 {
+  }
+  &__one {
     top: 3.65%;
-}
-#text-2 {
+  }
+  &__two {
     top: 11.3%;
-}
-#text-3 {
+  }
+  &__three {
     top: 21.9%;
     max-width: 44.8%;
+  }
 }
 
 // Car and curved text
-#curved-text {
-    top: 33.2%;
-    left: 2%;
-    width: 38.064133016627075%;
-    height: 16.330166270783845%;
-    path {
-        fill: $black;
-    }
-}
-#car {
-    width: 100%;
-    top: -150%;
-    left: -200%;
-    z-index: 10;
-    g {
-        transform: scale(18%);
-    }
+.carText {
+  &__curvedText {
+      top: 33.2%;
+      left: 2%;
+      width: 38.064133016627075%;
+      height: 16.330166270783845%;
+      path {
+          fill: $black;
+      }
+  }
+  &__car {
+      width: 100%;
+      top: -150%;
+      left: -200%;
+      z-index: 10;
+      g {
+          transform: scale(18%);
+      }
+  }
 }
 
 // Moon and stars
-#moon {
+.sky {
+  &__moon {
     top: 10.6%;
     left: 65.1%;
     width: 23.45%;
     height: 22.802850356294538%;
 }
-#star-1 {
+&__starTop {
     top: 9.55%;
     left: 84%;
     width: 6.65083135391924%;
@@ -704,7 +618,7 @@ $black: #000;
         fill: $yellow;
     }
 }
-#star-2 {
+&__starBottom {
     top: 16.8%;
     left: 90%;
     width: 4.98812351543943%;
@@ -714,9 +628,6 @@ $black: #000;
         fill: $yellow;
     }
 }
-#star-1, #star-2 {
-    animation-name: starShake;
-    animation-iteration-count: infinite;
 }
 @keyframes starShake {
     0% {
@@ -735,42 +646,77 @@ $black: #000;
 
 // Car media queries
 @media (min-width: 100px) {
-    #car {
+  .carText {
+      &__car {
         top: -70%;
         left: -200%;
     }
+  }
 }
 @media (min-width: 200px) {
-    #car {
+  .carText {
+    &__car {
         top: -30%;
         left: -34%;
     }
+  }
 }
 @media (min-width: 300px) {
-    #car {
+  .carText {
+    &__car {
         top: 0;
     }
+  }
 }
 @media (min-width: 400px) {
-    #car {
+  .carText {
+    &__car {
         top: 10%;
     }
+  }
 }
 @media (min-width: 600px) {
-    #car {
+  .carText {
+    &__car {
         top: 20%;
     }
+  }
 }
 @media (min-width: 840px) {
-    #car {
+  .carText {
+    &__car {
         top: 25%;
         left: -34%;
     }
+  }
 }
 @media (min-width: 875px) {
   .footer {
     p {
       font-size: 10px;
+    }
+  }
+}
+
+.carText__car, .clouds {
+  display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sky {
+    &__starTop, &__starBottom {
+      animation-name: starShake;
+      animation-iteration-count: infinite;
+    }
+  }
+  .carText__car, .clouds {
+    display: block;
+  }
+  .planet {
+    &__eye--white {
+      animation-name: eyeShaking;
+      animation-duration: 0.22s;
+      animation-iteration-count: infinite;
     }
   }
 }
